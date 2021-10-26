@@ -138,5 +138,17 @@ final class Arrays
         $array = array_slice($array, 0, $offset + 1, true) + $inserted + array_slice($array, $offset + 1, count($array), true);
     }
 
+    /**
+     * @param array|string $search
+     * @param array|string $replace
+     * @param array|string $subject
+     * @param $count
+     * @return mixed
+     */
+    function strReplace(array|string $search, array|string $replace, array|string $subject, $count): mixed
+    {
+        return json_decode(str_replace($search, $replace,  json_encode($subject)), $count);
+
+    }
 
 }
