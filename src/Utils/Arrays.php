@@ -2,8 +2,6 @@
 
 namespace Suna\Utils;
 
-use JetBrains\PhpStorm\Pure;
-
 /**
  * Arrays Helpers
  *
@@ -102,7 +100,7 @@ final class Arrays
      * @param string|int $key
      * @return int|null
      */
-    #[Pure] public static function getKeyOffset(array $array, string|int $key): ?int
+    public static function getKeyOffset(array $array, string|int $key): ?int
     {
         return Helpers::falseToNull(array_search(self::toKey($key), array_keys($array), true));
     }

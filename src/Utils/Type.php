@@ -2,7 +2,7 @@
 
 namespace Suna\Utils;
 
-use Suna\Utils\Exceptions\InvalidArgumentException;
+use Suna\Exceptions\InvalidArgumentException;
 
 /**
  * Type Helpers

@@ -3,7 +3,7 @@
 namespace Suna\Utils;
 
 use Suna\Traits\TrStaticClass;
-use Suna\Utils\Exceptions\MemberAccessException;
+use Suna\Exceptions\MemberAccessException;
 
 /**
  * Object Helpers
