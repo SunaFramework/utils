@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Suna\Utils\Exceptions;
+namespace Suna\Exceptions;
 
 /**
  * The exception that is thrown when accessing a class member (property or method) fails.

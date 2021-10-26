@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Suna\Utils\Exceptions;
+namespace Suna\Exceptions;
 
 /**
  * The exception that indicates the last Regexp exec error.
