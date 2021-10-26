@@ -37,13 +37,15 @@ final class Arrays
 
     /**
      * Returns the last item from the array or null if array is empty.
-     * @template T
-     * @param  array<T>  $array
-     * @return ?T
+     * @note The original array is not altered
+     *
+     * @param array $array
+     * @return mixed
      */
     public static function last(array $array): mixed
     {
-        return count($array) ? end($array) : null;
+        $arrCopy = $array;
+        return end($arrCopy);
     }
 
 }

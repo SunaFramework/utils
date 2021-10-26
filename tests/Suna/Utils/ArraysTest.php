@@ -46,4 +46,28 @@ class ArraysTest extends TestCase
         $this->assertEquals($arrTestCopy, $arrTest);
     }
 
+    public function testLast(): void
+    {
+        $arrTest = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 999];
+        $arrTestCopy = $arrTest;
+        $this->assertEquals(999, Arrays::last($arrTest));
+        // Check that the original array has not changed
+        $this->assertEquals($arrTestCopy, $arrTest);
+
+        $arrTest = [
+            "test" => 1,
+            "test2" => 10,
+        ];
+        $arrTestCopy = $arrTest;
+        $this->assertEquals(10, Arrays::last($arrTest));
+        // Check that the original array has not changed
+        $this->assertEquals($arrTestCopy, $arrTest);
+
+        $arrTest = [];
+        $arrTestCopy = $arrTest;
+        $this->assertEquals(null, Arrays::last($arrTest));
+        // Check that the original array has not changed
+        $this->assertEquals($arrTestCopy, $arrTest);
+    }
+
 }
