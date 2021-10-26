@@ -38,6 +38,12 @@ class ArraysTest extends TestCase
         $this->assertEquals(1, Arrays::first($arrTest));
         // Check that the original array has not changed
         $this->assertEquals($arrTestCopy, $arrTest);
+
+        $arrTest = [];
+        $arrTestCopy = $arrTest;
+        $this->assertEquals(null, Arrays::first($arrTest));
+        // Check that the original array has not changed
+        $this->assertEquals($arrTestCopy, $arrTest);
     }
 
 }

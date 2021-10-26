@@ -35,4 +35,15 @@ final class Arrays
         return array_shift($arrCopy);
     }
 
+    /**
+     * Returns the last item from the array or null if array is empty.
+     * @template T
+     * @param  array<T>  $array
+     * @return ?T
+     */
+    public static function last(array $array): mixed
+    {
+        return count($array) ? end($array) : null;
+    }
+
 }
