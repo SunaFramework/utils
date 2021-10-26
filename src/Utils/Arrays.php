@@ -8,7 +8,7 @@ namespace Suna\Utils;
  * @version 0.1
  * @author Filipe Voges <filipe.vogesh@gmail.com>
  */
-class Arrays
+final class Arrays
 {
     /**
      * Checks if an array contains a certain element
