@@ -3,11 +3,11 @@
 namespace Suna\Exceptions;
 
 /**
- * The exception that is thrown when accessing a class member (property or method) fails.
+ * The exception that is thrown when an I/O error occurs.
  *
  * @version 0.1
  * @author Filipe Voges <filipe.vogesh@gmail.com>
  */
-final class MemberAccessException extends \Error
+final class IOException extends \RuntimeException
 {
 }

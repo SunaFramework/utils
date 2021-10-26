@@ -8,6 +8,6 @@ namespace Suna\Exceptions;
  * @version 0.1
  * @author Filipe Voges <filipe.vogesh@gmail.com>
  */
-class InvalidArgumentException extends \InvalidArgumentException
+final class InvalidArgumentException extends \InvalidArgumentException
 {
 }
