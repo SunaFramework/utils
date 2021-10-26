@@ -11,7 +11,7 @@ use Suna\Traits\TrObject;
  * @version 0.1
  * @author Filipe Voges <filipe.vogesh@gmail.com>
  */
-class DateTime extends \DateTime implements \JsonSerializable
+final class DateTime extends \DateTime implements \JsonSerializable
 {
     use TrObject;
 
