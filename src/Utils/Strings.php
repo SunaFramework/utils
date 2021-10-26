@@ -14,6 +14,32 @@ use Suna\Utils\Exceptions\RegexpException;
 final class Strings
 {
     /**
+     * Masks a string to the desired pattern
+     *
+     * @example '###.###.###-##'
+     * @param $val
+     * @param $mask
+     * @return string
+     */
+    public static function mask($val, $mask): string
+    {
+        $maskStr = '';
+        $k = 0;
+        for($i = 0; $i <= strlen($mask)-1; $i++){
+            if($mask[$i] === '#'){
+                if(isset($val[$k])){
+                    $maskStr .= $val[$k++];
+                }
+            }else{
+                if(isset($mask[$i])){
+                    $maskStr .= $mask[$i];
+                }
+            }
+        }
+        return $maskStr;
+    }
+
+    /**
      * @param string $func
      * @param array $args
      * @return mixed

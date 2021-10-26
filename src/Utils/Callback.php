@@ -39,7 +39,7 @@ final class Callback
     }
 
     /**
-     * Returns the Reflection Object to the method or function used in the PHP callback.
+     * Returns the Reflection Obj to the method or function used in the PHP callback.
      *
      * @param $callable
      * @return \ReflectionFunctionAbstract
